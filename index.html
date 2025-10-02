@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tripzy — Tourist & Visa Services</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 (latest) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="Tripzy — Expert tourist visa services. Fast applications, friendly support, and guidance for multiple countries.">
+</head>
+<body>
+
+<!-- NAV / TOP -->
+<header class="bg-white shadow-sm sticky-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <div class="brand-circle">T</div>
+        <div>
+          <div class="h5 mb-0 brand-name">tripzy</div>
+          <small class="text-muted">visa & travel</small>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#services" data-key="nav_services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how" data-key="nav_how">How it works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#countries" data-key="nav_countries">Countries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq" data-key="nav_faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-outline-primary ms-2" href="#contact" data-key="nav_contact">Contact</a></li>
+
+          <!-- Language selector -->
+          <li class="nav-item dropdown ms-3">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+              <span id="lang-flag">🇬🇧</span> <span id="lang-label">EN</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item lang-switch" href="#" data-lang="en">🇬🇧 English</a></li>
+              <li><a class="dropdown-item lang-switch" href="#" data-lang="pl">🇵🇱 Polish</a></li>
+              <li><a class="dropdown-item lang-switch" href="#" data-lang="bn">🇧🇩 Bengali</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- 1. HERO: travel image with headline -->
+<section id="hero" class="hero-section py-5 position-relative">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold" data-i18n="hero_title">Trusted travel visas made simple</h1>
+        <p class="lead text-muted" data-i18n="hero_sub">Tripzy helps travelers secure tourist visas quickly with expert documentation and friendly support — stress-free travel planning.</p>
+
+        <div class="d-flex gap-2 mt-4">
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero_cta">Get my visa</a>
+          <a href="#services" class="btn btn-outline-dark btn-lg" data-i18n="hero_cta2">View packages</a>
+        </div>
+
+        <ul class="list-unstyled mt-4 text-muted small">
+          <li><i class="fa-solid fa-check me-2 text-success"></i><span data-i18n="hero_bullet1">Personalized document check</span></li>
+          <li><i class="fa-solid fa-check me-2 text-success"></i><span data-i18n="hero_bullet2">Fast appointment booking</span></li>
+          <li><i class="fa-solid fa-check me-2 text-success"></i><span data-i18n="hero_bullet3">Multilingual support</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <div class="hero-image shadow rounded">
+          <!-- placeholder hero image -->
+          <img src="images/sec1.jpg" alt="travel" class="img-fluid rounded">
+          <div class="hero-overlay">
+            <span class="badge bg-light text-dark">Fast • Secure • Friendly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. VIDEO / ANSWERS -->
+<section id="video" class="py-5 bg-white">
+  <div class="container text-center">
+    <h3 data-i18n="video_title">Find answers in our quick guide</h3>
+    <p class="text-muted mb-4" data-i18n="video_sub">Watch our short walkthrough showing how Tripzy prepares your visa documents.</p>
+
+    <div class="ratio ratio-16x9 mx-auto" style="max-width:900px;">
+      <!-- placeholder video - link to YouTube or a lightbox can be used later -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/orbkg5JH9C8?si=tmO7hhoYQauKnL7Q&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- 3. OUR SERVICES (3 packages) -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4" data-i18n="services_title">Our Packages</h2>
+    <p class="text-center text-muted mb-5" data-i18n="services_sub">Choose the plan that suits your trip — all packages include expert document review.</p>
+
+    <div class="row g-4">
+      <!-- Standard -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Standard</h5>
+            <p class="text-muted mb-3 small">Essential support for single-trip tourist visa.</p>
+            <ul class="list-unstyled mb-4">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Document checklist & review</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Form filling help</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Email support</li>
+            </ul>
+            <div class="mt-auto">
+              <div class="h4 mb-3">€49</div>
+              <a href="#contact" class="btn btn-outline-primary w-100">Select Standard</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gold -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-primary h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Gold</h5>
+            <p class="text-muted mb-3 small">Priority processing and interview prep.</p>
+            <ul class="list-unstyled mb-4">
+              <li><i class="fa-solid fa-check text-success me-2"></i>Everything in Standard</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Appointment booking</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Phone consultation</li>
+            </ul>
+            <div class="mt-auto">
+              <div class="h4 mb-3">€99</div>
+              <a href="#contact" class="btn btn-primary w-100">Select Gold</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platinum -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Platinum</h5>
+            <p class="text-muted mb-3 small">Full support and document handling.</p>
+            <ul class="list-unstyled mb-4">
+              <li><i class="fa-solid fa-check text-success me-2"></i>All Gold features</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Dedicated case manager</li>
+              <li><i class="fa-solid fa-check text-success me-2"></i>Express review</li>
+            </ul>
+            <div class="mt-auto">
+              <div class="h4 mb-3">€169</div>
+              <a href="#contact" class="btn btn-outline-primary w-100">Select Platinum</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.container -->
+</section>
+
+<!-- 4. HOW WE WORK -->
+<section id="how" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center mb-4" data-i18n="how_title">How Tripzy handles your visa</h3>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <ul class="timeline list-unstyled">
+          <li><strong>1. Consultation</strong> — We check your travel purpose and documents.</li>
+          <li><strong>2. Document preparation</strong> — We prepare & correct your forms.</li>
+          <li><strong>3. Appointment booking</strong> — We help book embassy/consulate slots.</li>
+          <li><strong>4. Interview prep</strong> — Practice Q&A and guidance.</li>
+          <li><strong>5. Follow-up</strong> — We track the application until decision.</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="images/sec4.png" style="height: 400px;" class="img-fluid rounded shadow" alt="process">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. RECOMMENDATIONS / TESTIMONIALS -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4" data-i18n="testi_title">Client stories</h3>
+    <p class="text-center text-muted mb-5" data-i18n="testi_sub">Hear how Tripzy helped travelers secure their visas and travel with confidence.</p>
+
+    <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex gap-3 align-items-center mb-3">
+                    <img src="https://i.pravatar.cc/64?img=10" class="rounded-circle" alt="">
+                    <div>
+                      <strong>Ashley R.</strong>
+                      <div class="text-muted small">Poland → USA</div>
+                    </div>
+                  </div>
+                  <p class="mb-0">Tripzy made everything straightforward — they checked my forms and booked the appointment. I got my tourist visa in under 10 days!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <div class="d-flex gap-3 align-items-center mb-3">
+                    <img src="https://i.pravatar.cc/64?img=12" class="rounded-circle" alt="">
+                    <div>
+                      <strong>Rahim M.</strong>
+                      <div class="text-muted small">Bangladesh → Canada</div>
+                    </div>
+                  </div>
+                  <p class="mb-0">Supportive service and quick replies. Interview prep was very helpful.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CONTACT FORM -->
+<section id="contact" class="py-5 bg-white">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <h3 data-i18n="contact_title">Get a free consultation</h3>
+        <p class="text-muted" data-i18n="contact_sub">Send us your details and we will get back with next steps.</p>
+
+        <form id="contactForm">
+          <div class="mb-3">
+            <label class="form-label" data-i18n="form_name">Full name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" data-i18n="form_email">Email address</label>
+            <input type="email" class="form-control" id="email" value="tripzy.cn@gmail.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" data-i18n="form_message">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Tell us which country and dates..."></textarea>
+          </div>
+
+          <div id="formAlert" class="alert d-none" role="alert"></div>
+
+          <button type="submit" class="btn btn-primary" data-i18n="form_send">Send Request</button>
+        </form>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="images/sec6.png" alt="contact" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. COUNTRIES -->
+<section id="countries" class="py-5 bg-light">
+  <div class="container">
+    <h3 class="text-center mb-4" data-i18n="countries_title">We help with visas for</h3>
+    <p class="text-center text-muted mb-5" data-i18n="countries_sub">Popular destinations we process tourist visas for.</p>
+
+    <div class="row g-3 justify-content-center">
+      <!-- Example country cards with emoji flags -->
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇺🇸 <div>United States</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇨🇦 <div>Canada</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇬🇧 <div>United Kingdom</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇩🇪 <div>Germany</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇫🇷 <div>France</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇦🇺 <div>Australia</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇯🇵 <div>Japan</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇮🇳 <div>India</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇧🇩 <div>Bangladesh</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇿🇦 <div>South Africa</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇧🇷 <div>Brazil</div></div>
+      <div class="col-6 col-md-3 col-lg-2 text-center country-card">🇦🇪 <div>UAE</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section id="faq" class="py-5">
+  <div class="container">
+    <h3 class="text-center mb-4" data-i18n="faq_title">Frequently Asked Questions</h3>
+
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">How long does a tourist visa take?</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Processing times depend on the country; typically 5–20 business days after submission.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Do you guarantee a visa?</button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">No service can guarantee a consulate decision, but we provide expert preparation to maximize success.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">What documents are required?</button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Common documents include passport, photo, proof of accommodation, travel itinerary, and financial proof.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FOOTER -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h5 class="mb-2 brand-name">tripzy</h5>
+        <p class="small text-muted">Tripzy is a travel and visa agency helping visitors prepare tourist visas with confidence. Based in EU. Multilingual support.</p>
+        <div class="mt-3">
+          <a class="text-light me-3" href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="text-light me-3" href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+          <a class="text-light me-3" href="#" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a class="text-light" href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Quick links</h6>
+        <ul class="list-unstyled small">
+          <li><a class="text-muted" href="#services">Packages</a></li>
+          <li><a class="text-muted" href="#how">How it works</a></li>
+          <li><a class="text-muted" href="#countries">Countries</a></li>
+          <li><a class="text-muted" href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Contact</h6>
+        <p class="small text-muted mb-1">Email</p>
+        <p class="mb-2"><a class="text-light" href="mailto:tripzy.cn@gmail.com">tripzy.cn@gmail.com</a></p>
+        <p class="small text-muted">© <span id="year"></span> Tripzy. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS and Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
